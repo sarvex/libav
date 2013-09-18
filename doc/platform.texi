@@ -24,6 +24,16 @@ If not, then you should install a different compiler that has no
 hard-coded path to gas. In the worst case pass @code{--disable-asm}
 to configure.
 
+@section Compiling a shared library statically against libav
+
+If you are compiling a .so and you want to include libav statically
+inside the shared library, in addition to configuring with --enable-pic,
+you will need to add this to your linker command:
+
+@example
+-Wl,-Bsymbolic
+@end example
+
 @section BSD
 
 BSD make will not build Libav, you need to install and use GNU Make
