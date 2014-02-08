@@ -58,6 +58,7 @@ version 10:
 - Mirillis FIC video decoder
 - Support DNx444
 - libx265 encoder
+- compand audio filter
 
 
 version 9:
